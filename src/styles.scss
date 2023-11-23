@@ -49,66 +49,11 @@ a {
   text-decoration: none;
 }
 
-button {
-  border: none;
-  cursor: pointer;
-  color: var(--white);
-  border-radius: 2rem;
-  text-transform: uppercase;
-  padding: 0.75rem 1.625rem;
-  font-size: var(--medium-font-size);
-  font-weight: var(--bold-font-weight);
-}
-
-button:active {
-  opacity: 0.8;
-}
-
-button:disabled {
-  background-color: #B1B1B1;
-  cursor: default;
-}
-
-.primary-button {
-  background-color: var(--primary);
-}
-
-.secundary-button {
-  background-color: transparent;
-  border: 1px solid var(--primary);
-}
-
-.secundary-button:hover {
-  background-color: var(--primary);
-}
-
 .title {
   line-height: 3rem;
   color: var(--white);
   font-size: var(--title-font-size);
   font-weight: var(--medium-font-weight);
-}
-
-.subtitle {
-  line-height: normal;
-  font-size: var(--subtitle-font-size);
-  font-weight: var(--lighter-font-weight);
-}
-
-.small-subtitle {
-  line-height: normal;
-  font-weight: var(--medium-font-weight);
-  font-size: var(--small-subtitle-font-size);
-}
-
-.large-text {
-  line-height: 2.125rem;
-  font-size: var(--large-text-font-size);
-  font-weight: var(--medium-font-weight);
-}
-
-.large-text.text-primary {
-  font-weight: var(--bold-font-weight);
 }
 
 .text {
@@ -136,29 +81,6 @@ button:disabled {
   font-weight: var(--bold-font-weight-900);
 }
 
-.small-subtitle.text-primary {
-  font-weight: var(--bold-font-weight);
-}
-
-.error {
-  gap: 0.125rem;
-  display: flex;
-  margin-top: 4rem;
-  position: absolute;
-  align-items: center;
-}
-
-.error-text {
-  color: var(--red);
-  font-size: 0.75rem;
-  line-height: normal;
-  font-weight: var(--bold-font-weight);
-}
-
-.invalid-input {
-  border: 2px solid var(--red) !important;
-}
-
 .hidden-desktop {
   display: none;
 }
@@ -173,35 +95,11 @@ button:disabled {
     line-height: 2.5rem;
   }
 
-  .subtitle {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-
-  .subtitle.text-primary {
-    font-weight: var(--bold-font-weight);
-  }
-
-  .small-subtitle {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .large-text {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-
   .hidden-desktop {
     display: flex;
   }
 
   .hidden-mobile {
     display: none !important;
-  }
-
-  button {
-    font-size: 1rem;
-    font-weight: var(--bold-font-weight);
   }
 }
