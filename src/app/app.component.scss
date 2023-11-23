@@ -1,0 +1,131 @@
+.content-3 {
+  gap: 9.5rem;
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 4.75rem;
+  align-items: center;
+  justify-content: center;
+
+  .content-info-ilustration {
+    width: 23.5625rem;
+    height: 33.3125rem;
+  }
+
+  .book-image {
+    z-index: -1;
+    position: absolute;
+    margin-right: 700px;
+  }
+
+  .content-info {
+    .content-info-title {
+      margin-bottom: 1rem;
+      max-width: 37.875rem;
+
+      .title-small-weight {
+        font-weight: var(--medium-font-weight);
+      }
+    }
+
+    .content-info-text {
+      max-width: 33.75rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .content-info-footer {
+    gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+
+    .content-logos {
+      z-index: 1;
+      gap: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .americanas-logo {
+        margin-top: -8px;
+      }
+
+      .shopee-logo {
+        margin-top: -9px;
+      }
+
+      .submarino-logo {
+        margin-top: -10px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1100px) {
+  .book-image {
+    margin-right: 450px !important;
+  }
+}
+
+@media(max-width: 800px) {
+  .content-3 {
+    padding-top: 3rem !important;
+    flex-direction: column;
+
+    .content-info {
+      width: 100%;
+      background: radial-gradient(180% 53% at 50% 38%, rgba(64, 173, 28, 0.3) 0%, rgba(0, 0, 0, 0.00) 59.19%);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .content-info-title {
+      max-width: 19rem !important;
+      text-align: center;
+      margin-bottom: 1.5rem !important;
+
+      .title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+
+    .content-info-ilustration {
+      width: 100% !important;
+      height: 100% !important;
+      text-align: center;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      .content-info-stores {
+        display: flex;
+        padding-bottom: 1rem;
+        flex-direction: column;
+      }
+
+      img {
+        z-index: 0;
+        margin-top: 0 !important;
+        position: relative !important;
+        max-width: 100% !important;
+        width: auto !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+
+    .content-info-text {
+      margin-top: 1.875rem;
+      max-width: 19.625rem !important;
+    }
+
+    .content-info-footer {
+      max-width: 19.625rem;
+
+      .content-logos {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

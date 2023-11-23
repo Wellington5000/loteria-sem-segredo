@@ -1,1 +1,207 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  //CORES
+  --red: #FF3A44;
+  --black: #000000;
+  --white : #FFFFFF;
+  --black-2: #161C24;
+  --primary: #40AD1C;
+
+  //FONTES
+  --font-family: 'Nunito';
+
+  //TAMANHO DAS FONTES
+  --title-font-size: 3rem;
+  --text-font-size: 1.125rem;
+  --small-text-font-size: 1rem;
+  --medium-font-size: 0.875rem;
+  --large-text-font-size: 1.5rem;
+  --subtitle-font-size: 2.3125rem;
+  --small-subtitle-font-size: 1.8rem;
+
+  //PESO DAS FONTES
+  --bold-font-weight: 700;
+  --medium-font-weight: 400;
+  --regular-font-weight: 500;
+  --lighter-font-weight: 300;
+  --bold-font-weight-900: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  background-color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+  border-radius: 2rem;
+  text-transform: uppercase;
+  padding: 0.75rem 1.625rem;
+  font-size: var(--medium-font-size);
+  font-weight: var(--bold-font-weight);
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+button:disabled {
+  background-color: #B1B1B1;
+  cursor: default;
+}
+
+.primary-button {
+  background-color: var(--primary);
+}
+
+.secundary-button {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+}
+
+.secundary-button:hover {
+  background-color: var(--primary);
+}
+
+.title {
+  line-height: 3rem;
+  color: var(--white);
+  font-size: var(--title-font-size);
+  font-weight: var(--medium-font-weight);
+}
+
+.subtitle {
+  line-height: normal;
+  font-size: var(--subtitle-font-size);
+  font-weight: var(--lighter-font-weight);
+}
+
+.small-subtitle {
+  line-height: normal;
+  font-weight: var(--medium-font-weight);
+  font-size: var(--small-subtitle-font-size);
+}
+
+.large-text {
+  line-height: 2.125rem;
+  font-size: var(--large-text-font-size);
+  font-weight: var(--medium-font-weight);
+}
+
+.large-text.text-primary {
+  font-weight: var(--bold-font-weight);
+}
+
+.text {
+  color: var(--white);
+  line-height: 1.6875rem;
+  font-size: var(--text-font-size);
+  font-weight: var(--medium-font-weight);
+}
+
+.small-text {
+  line-height: normal;
+  font-size: var(--small-text);
+  font-weight: var(--bold-font-weight);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secundary {
+  color: var(--white);
+}
+
+.title.text-primary {
+  font-weight: var(--bold-font-weight-900);
+}
+
+.small-subtitle.text-primary {
+  font-weight: var(--bold-font-weight);
+}
+
+.error {
+  gap: 0.125rem;
+  display: flex;
+  margin-top: 4rem;
+  position: absolute;
+  align-items: center;
+}
+
+.error-text {
+  color: var(--red);
+  font-size: 0.75rem;
+  line-height: normal;
+  font-weight: var(--bold-font-weight);
+}
+
+.invalid-input {
+  border: 2px solid var(--red) !important;
+}
+
+.hidden-desktop {
+  display: none;
+}
+
+.hidden-mobile {
+  display: flex;
+}
+
+@media(max-width: 800px) {
+  .title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .subtitle.text-primary {
+    font-weight: var(--bold-font-weight);
+  }
+
+  .small-subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .large-text {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .hidden-desktop {
+    display: flex;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: var(--bold-font-weight);
+  }
+}
